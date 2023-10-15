@@ -7,6 +7,7 @@ public class App {
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
         System.out.println("3 - Calc");
+        System.out.println("4 - GCD");
         System.out.println("0 - Exit");
 
         int choise = scanner.nextInt();
@@ -19,6 +20,9 @@ public class App {
         } else if (choise == 3) {
             SecondGame secondGame = new SecondGame();
             secondGame.run();
+        } else if (choise == 4) {
+            ThirdGame thirdGame = new ThirdGame();
+            thirdGame.run();
         }
     }
 }

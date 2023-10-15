@@ -6,3 +6,5 @@ src="https://api.codeclimate.com/v1/badges/f53b2b8ee9f4a6bd1f3f/maintainability"
 https://asciinema.org/a/w9uh116NCbCtEFdDSneC6nitJ
 
 https://asciinema.org/a/yBuGr9j744uwK39oy66iuiqgM
+
+https://asciinema.org/a/mfntfXubRKwSqEwiysaTP87zN

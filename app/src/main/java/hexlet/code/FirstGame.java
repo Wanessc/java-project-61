@@ -31,7 +31,7 @@ import java.util.Scanner;
                     System.out.println("Correct!");
                     correctAnswers++;
                 } else {
-                    System.out.println(userAnswer + " is wrong answer ;(. Correct answer was ' " + (isEven ? "'yes''" : "'no'") + ".");
+                    System.out.println(userAnswer + " is wrong answer ;(. Correct answer was  " + (isEven ? "'yes''" : "'no'") + ".");
                     System.out.println("Let's try again, " + name +"!");
                     return;
                 }
