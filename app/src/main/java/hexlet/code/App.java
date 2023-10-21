@@ -33,7 +33,7 @@ public class App {
             FifeGame fifeGame = new FifeGame();
             fifeGame.run();
         }
-    };
+    }
 }
 
 
