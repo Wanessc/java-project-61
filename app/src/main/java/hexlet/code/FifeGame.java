@@ -44,7 +44,7 @@ interface Prime {
              String userAnswer = scanner.next().toLowerCase();
 
              if(isPrime(num) && userAnswer.equals("yes") || (!isPrime(num) && userAnswer.equals("no"))) {
-                 System.out.println("Correct");
+                 System.out.println("Correct!");
                  correctAnswers++;
              } else {
                  System.out.println(userAnswer + "  is wrong answer ;(. Correct answer was: " + (isPrime(num) ? "yes" : "'no'") + ".");
