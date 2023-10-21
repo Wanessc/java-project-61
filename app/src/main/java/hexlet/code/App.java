@@ -15,7 +15,7 @@ public class App {
 
         int choise = scanner.nextInt();
 
-        if(choise == 1) {
+        if (choise == 1) {
             Cli.greetUser();
         } else if (choise == 2) {
             FirstGame firstGame = new FirstGame();
