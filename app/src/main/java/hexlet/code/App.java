@@ -9,6 +9,7 @@ public class App {
         System.out.println("3 - Calc");
         System.out.println("4 - GCD");
         System.out.println("5 - Progression");
+        System.out.println("6 - Prime");
         System.out.println("0 - Exit");
         System.out.println("Your choice:");
 
@@ -28,8 +29,11 @@ public class App {
         } else if (choise == 5) {
             FourthGame fourthGame = new FourthGame();
             fourthGame.run();
+        } else if (choise == 6) {
+            FifeGame fifeGame = new FifeGame();
+            fifeGame.run();
         }
-    }
+    };
 }
 
 

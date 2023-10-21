@@ -55,4 +55,4 @@ class FourthGame implements Progression {
         }
         System.out.println("Congratulations, " + name + "!");
     }
-}
+};
