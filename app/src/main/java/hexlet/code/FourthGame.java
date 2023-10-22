@@ -10,11 +10,11 @@ interface Progression {
 class FourthGame implements Progression {
     private Scanner scanner = new Scanner(System.in);
     private Random random = new Random();
-    private final int progressionLength = 10;
-    private final int minNumber = 1;
-    private  final int maxNumber = 100;
-    private final int maxAtterms = 3;
-    private final int charNam = 11;
+    private static final int progressionLength = 10;
+    private static final int minNumber = 1;
+    private static final int maxNumber = 100;
+    private static final int maxAtterms = 3;
+    private static final int charNam = 11;
 
     @Override
     public void run() {
@@ -41,9 +41,10 @@ class FourthGame implements Progression {
                     progression.append(a + i * b).append(" ");
                 }
             }
+
             System.out.println("Question: " + progression);
             System.out.println("Your answer:");
-            int userAnswer  = scanner.nextInt();
+            int userAnswer = scanner.nextInt();
 
             if (userAnswer == hiddenNumber) {
                 System.out.println("Correct!");
@@ -56,4 +57,4 @@ class FourthGame implements Progression {
         }
         System.out.println("Congratulations, " + name + "!");
     }
-};
+}
