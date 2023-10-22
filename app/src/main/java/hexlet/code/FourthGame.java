@@ -14,7 +14,7 @@ class FourthGame implements Progression {
     private static final int MIN_NUMBER = 1;
     private static final int MAX_NUMBER = 100;
     private static final int MAX_ATTEMPTS = 3;
-    private final static int CHAR_NUM  = 3;
+    private final int CHAR_NUM  = 3;
 
     @Override
     public void run() {
