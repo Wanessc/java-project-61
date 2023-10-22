@@ -36,7 +36,7 @@ class FourthGame implements Progression {
 
             for (int i = 0; i < progressionLength; i++) {
                 if (i == hiddeIndex) {
-                    progression.append("..");
+                    progression.append(".. ");
                 } else {
                     progression.append(a + i * b).append(" ");
                 }
