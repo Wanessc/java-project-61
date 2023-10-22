@@ -9,6 +9,7 @@ interface GCD {
 class ThirdGame implements GCD {
     private Scanner scanner = new Scanner(System.in);
     private Random random = new Random();
+    private final int randoms1 = 100;
     private final int maxAtterms = 3;
 
     private int findGCD(int a, int b) {
@@ -29,8 +30,8 @@ class ThirdGame implements GCD {
         int correctAnswers = 0;
 
         while (correctAnswers < maxAtterms) {
-            int num1 = random.nextInt(100) + 1;
-            int num2 = random.nextInt(100) + 1;
+            int num1 = random.nextInt(randoms1) + 1;
+            int num2 = random.nextInt(randoms1) + 1;
 
             int gcd = findGCD(num1, num2);
             System.out.println("Question: " + num1 + " " + num2);

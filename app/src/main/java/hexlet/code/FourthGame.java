@@ -14,6 +14,7 @@ class FourthGame implements Progression {
     private final int minNumber = 1;
     private  final int maxNumber = 100;
     private final int maxAtterms = 3;
+    private final int charNam = 11;
 
     @Override
     public void run() {
@@ -27,7 +28,7 @@ class FourthGame implements Progression {
 
         while (correctAnswers < maxAtterms) {
             int a = random.nextInt(maxNumber - minNumber + 1) + minNumber;
-            int b = random.nextInt(11) + 1;
+            int b = random.nextInt(charNam) + 1;
             int hiddeIndex = random.nextInt(progressionLength);
             int hiddenNumber = a + b * hiddeIndex;
 

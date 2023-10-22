@@ -7,6 +7,8 @@ interface Prime {
 class FifeGame implements Prime {
     private final Scanner scanner = new Scanner(System.in);
     private final Random random = new Random();
+    private final int maxAtterms = 3;
+    private final int minAterm = 20;
     private boolean isPrime(int number) {
         if (number <= 1) {
             return false;
@@ -34,10 +36,9 @@ class FifeGame implements Prime {
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
 
         int correctAnswers = 0;
-        int maxAtterms = 3;
 
         while (correctAnswers < maxAtterms) {
-            int num = random.nextInt(20);
+            int num = random.nextInt(minAterm);
             System.out.println("Question: " + num);
             System.out.print("Your answer: ");
             String userAnswer = scanner.next().toLowerCase();

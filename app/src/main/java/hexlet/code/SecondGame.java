@@ -7,6 +7,8 @@ interface CalculatorGame {
 }
 class SecondGame implements CalculatorGame {
     private final Random random = new Random();
+    private final int maxAttempts = 3;
+    private final int randoms = 100;
     private final Scanner scanner = new Scanner(System.in);
 
     private char getRandomOperator() {
@@ -34,10 +36,9 @@ class SecondGame implements CalculatorGame {
         System.out.println("What is the result of the expression?");
 
         int correctAnswers = 0;
-        int maxAttempts = 3;
         while (correctAnswers < maxAttempts) {
-            int number1 = random.nextInt(100);
-            int number2 = random.nextInt(100);
+            int number1 = random.nextInt(randoms);
+            int number2 = random.nextInt(randoms);
             char operator = getRandomOperator();
             int result = calculateExpression(number1, number2,  operator);
             System.out.println("Question: " + number1 + " " + operator + " " + number2);
