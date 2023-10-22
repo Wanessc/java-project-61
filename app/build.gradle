@@ -9,7 +9,7 @@ application {
 }
 
 compileJava {
-    options.release = 21
+    options.release = 20
 }
 
 run {
