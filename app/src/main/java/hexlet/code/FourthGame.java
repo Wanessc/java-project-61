@@ -10,11 +10,11 @@ interface Progression {
 class FourthGame implements Progression {
     private Scanner scanner = new Scanner(System.in);
     private Random random = new Random();
-    private static final int progressionLength = 10;
-    private static final int minNumber = 1;
-    private static final int maxNumber = 100;
-    private static final int maxAtterms = 3;
-    private static final int charNam = 11;
+    private static final int PROGRESSION_LENGTH = 10;
+    private static final int MIN_NUMBER = 1;
+    private static final int MAX_NUMBER = 100;
+    private static final int MAX_ATTEMPTS = 3;
+    private final static int CHAR_NUM  = 3;
 
     @Override
     public void run() {
@@ -26,15 +26,15 @@ class FourthGame implements Progression {
 
         int correctAnswers = 0;
 
-        while (correctAnswers < maxAtterms) {
-            int a = random.nextInt(maxNumber - minNumber + 1) + minNumber;
-            int b = random.nextInt(charNam) + 1;
-            int hiddeIndex = random.nextInt(progressionLength);
+        while (correctAnswers < MAX_ATTEMPTS) {
+            int a = random.nextInt(MAX_NUMBER - MIN_NUMBER + 1) + MIN_NUMBER;
+            int b = random.nextInt(CHAR_NUM) + 1;
+            int hiddeIndex = random.nextInt(PROGRESSION_LENGTH);
             int hiddenNumber = a + b * hiddeIndex;
 
             StringBuilder progression = new StringBuilder();
 
-            for (int i = 0; i < progressionLength; i++) {
+            for (int i = 0; i < PROGRESSION_LENGTH; i++) {
                 if (i == hiddeIndex) {
                     progression.append(".. ");
                 } else {

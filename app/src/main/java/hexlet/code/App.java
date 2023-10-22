@@ -15,21 +15,28 @@ public class App {
 
         int choise = scanner.nextInt();
 
-        if (choise == 1) {
+        final int GREET_GAME = 1;
+        final int EVEN_GAME = 2;
+        final int CALC_GAME = 3;
+        final int GCD_GAME = 4;
+        final int PROGRESSION_GAME = 5;
+        final int PRIME_GAME = 6;
+
+        if (choise == GREET_GAME) {
             Cli.greetUser();
-        } else if (choise == 2) {
+        } else if (choise == EVEN_GAME) {
             FirstGame firstGame = new FirstGame();
             firstGame.run();
-        } else if (choise == 3) {
+        } else if (choise == CALC_GAME) {
             SecondGame secondGame = new SecondGame();
             secondGame.run();
-        } else if (choise == 4) {
+        } else if (choise == GCD_GAME) {
             ThirdGame thirdGame = new ThirdGame();
             thirdGame.run();
-        } else if (choise == 5) {
+        } else if (choise == PROGRESSION_GAME) {
             FourthGame fourthGame = new FourthGame();
             fourthGame.run();
-        } else if (choise == 6) {
+        } else if (choise == PRIME_GAME) {
             FifeGame fifeGame = new FifeGame();
             fifeGame.run();
         }
